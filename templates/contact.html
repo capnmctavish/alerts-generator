@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+   <body>
+      <h2 style = "text-align: center;">Contact Form</h2>
+		
+      
+      
+      <form action = "{{url_for('contact')}}" method ="POST">
+         <fieldset>
+            <legend>Alert Form</legend>
+            {{ form.hidden_tag() }}
+            
+            <div style = font-size:20px; font-weight:bold; margin-left:150px;>
+               {{ form.EdgeId.label }}<br>
+               {{ form.EdgeId }}
+               <br>
+               
+               {{ form.dpName.label }} {{ form.dpName }}
+               
+               {{ form.stm.label }}<br>
+               {{ form.stm }}
+               <br>
+               {{ form.threshold.label }}<br>
+               {{ form.threshold }}
+               <br>
+               {{ form.number.label }}<br>
+               {{ form.number}}
+               <br>
+               {{ form.reviewP.label }}<br>
+               {{ form.reviewP }}
+               <br>
+               
+               
+          
+               {{ form.submit }}
+            </div>
+            
+         </fieldset>
+      </form>
+   </body>
+</html>
