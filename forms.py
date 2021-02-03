@@ -5,7 +5,7 @@ from wtforms import validators, ValidationError
 
 class ContactForm(Form):
    dpName = SelectField('dpName', choices= ['NMMT','CMRL','HMRL(L&T Metro)','Narayana Hospital', 'NMMT Ghansoli Depot', 'Silver Sands Serenity', 'SRS Shanti Nagar Depot Bangalore','NMMT Turbhe'])
-   alertName = TextField("Name Of Student")
+   alertName = TextField("Name Of Alert")
    threshold = IntegerField("Threshold")
    number = IntegerField("Input review period")
    reviewP = SelectField('reviewP', choices = ['Days','Weeks','Months','Year'])
